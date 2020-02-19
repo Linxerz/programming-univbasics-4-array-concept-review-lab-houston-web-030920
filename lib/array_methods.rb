@@ -15,6 +15,11 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  # Add your solution here
-  return nil
+  min = array[0]
+  array.each do |e|
+    if e < min
+      min = e
+    end
+  end
+  min
 end
